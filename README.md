@@ -16,3 +16,8 @@ chapter02
 chapter03
  - 스프링 mvc를 이용한 웹 애플리케이션 구현 예제 코드 작성
  - 스프링 mvc 아키텍처의 핵심 구성요소 DispatcherServlet, 컨트롤러, 뷰, 뷰 리졸버 학습
+
+22.04.22
+chapter04
+ - 스프링 부트 pom.xml 구성, application.properties 설정 학습
+ - 기존 자바 웹 애플리케이션 배포와 임베디드 서버 개념 차이 학습
