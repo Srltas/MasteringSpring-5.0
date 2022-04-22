@@ -1,11 +1,16 @@
 package com.mastering.springboot.Chapter04;
 
+import java.util.Arrays;
+
 import org.jboss.logging.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.ApplicationContext;
+
+import com.mastering.springboot.Chapter04.properties.SomeDataService;
+import com.mastering.springboot.Chapter04.properties.SomeOtherDataService;
 
 @SpringBootApplication
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
@@ -21,11 +26,16 @@ public class Chapter04Application {
 //		Arrays.sort(beanNames);
 //		
 //		for (String beanName : beanNames) {
-//			System.out.println(beanName);
+//			logger.info(beanName);
 //		}
 		
 		SomeDataService dataService = ctx.getBean(SomeDataService.class);
-		logger.debug(dataService.retrieveSomeData());
+		SomeOtherDataService someOtherDataService =  ctx.getBean(SomeOtherDataService.class);
+		
+		logger.info("현재 적용된 cache : "+ ctx.getBean("cache"));
+		
+		logger.info(dataService.retrieveSomeData());
+		logger.info(someOtherDataService.retrieveSomeData());
 	}
 
 }
