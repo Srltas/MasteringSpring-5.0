@@ -26,3 +26,7 @@ chapter04
 chapter05
  - 스프링과 AspectJ로 AOP 예제 코드 작성하며 학습
  - 처음 학습하는 개념이라 복습이 매우 필요해 보임
+
+22.04.23
+chapter06
+ - 스프링 부트로 REST API 구축 학습
