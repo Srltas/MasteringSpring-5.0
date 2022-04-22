@@ -21,3 +21,8 @@ chapter03
 chapter04
  - 스프링 부트 pom.xml 구성, application.properties 설정 학습
  - 기존 자바 웹 애플리케이션 배포와 임베디드 서버 개념 차이 학습
+
+22.04.22
+chapter05
+ - 스프링과 AspectJ로 AOP 예제 코드 작성하며 학습
+ - 처음 학습하는 개념이라 복습이 매우 필요해 보임
