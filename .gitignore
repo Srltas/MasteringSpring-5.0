@@ -27,5 +27,10 @@ hs_err_pid*
 .classpath
 .project
 .springBeans
+.gitignore
+mvnw
+mvnw.cmd
 
 */target/*
+/*.mvn/*
+
